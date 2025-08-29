@@ -1,6 +1,6 @@
 import network
 from time import sleep
-from settings import *
+from wifi_settings import *
 from network import *
 import usocket
 
@@ -14,7 +14,7 @@ class Wifi:
         wlan.active(True)
         wlan.connect(WIFI_SSID, WIFI_PASSWORD)
         while wlan.isconnected() == False:
-            print('Waiting for connection...')
+            print(f'Waiting for connection to {WIFI_SSID}...')
             sleep(1)
             
         self.host = wlan.ifconfig()[0]

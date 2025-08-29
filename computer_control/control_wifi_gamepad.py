@@ -6,7 +6,7 @@ from pygame.locals import *
 import network
 
 # Specify the IP address of your robot
-HOST = "192.168.1.80" 
+HOST = "192.168.1.239" 
 
 # Specify the port number to send messages on
 PORT = 5000

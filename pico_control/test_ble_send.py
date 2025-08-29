@@ -1,4 +1,4 @@
-# Test sending BLE messages as a peripheral to a controller
+# Test sending BLE messages as a peripheral
 
 from bleperipheral import blePeripheral
 import random

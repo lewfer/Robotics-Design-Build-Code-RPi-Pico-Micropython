@@ -1,4 +1,4 @@
-# Test receiving BLE messages as a controller from a peripheral
+# Test receiving BLE messages as a central
 
 from blecentral import bleCentral
 
