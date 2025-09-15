@@ -21,11 +21,11 @@ def receivedMessage(message):
     
     # Handle BLE messages
     if message == "#FOUND":
-        flashLed():
+        flashLed()
     elif message == "#CONNECTED":
-        flashLed():
+        flashLed()
     elif message == "#READY":
-        flashLed():
+        flashLed()
     
     # Handle controller messages
     if message == "F":
@@ -43,7 +43,8 @@ def receivedMessage(message):
     elif message == "S":
         robot.motorOff(1)
         robot.motorOff(2)
-     
-ble = bleCentral("Bob's Robot", receivedMessage)
-ble.run()
 
+flashLed()
+ble = bleCentral("Bob's Robot", receivedMessage)
+flashLed()
+ble.run()
